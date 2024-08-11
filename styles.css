@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #2C3E50;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+a {
+    color: #3498DB;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    background-color: #5DADE2;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px;
+    height: 50px; /* Ensure height is equal to width */
+    margin-right: 10px;
+    border-radius: 50%; /* Makes the logo round */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+.logo-text {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.menu-bar {
+    font-size: 1.8em;
+    cursor: pointer;
+    color: #fff;
+}
+
+.slide-menu {
+    background-color: #5DADE2;
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 250px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slide-menu.show {
+    height: 180px;
+}
+
+.slide-menu ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.slide-menu ul li {
+    margin-bottom: 15px;
+}
+
+.slide-menu ul li a {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.menu-footer {
+    padding: 10px 20px;
+    background-color: #3498DB;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #3498DB;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+}
+
+/* Content Section Styles */
+.content-section {
+    padding: 60px 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.effect:hover {
+    background-color: #E8F6F3;
+    transform: scale(1.05);
+    opacity: 1;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#services .services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#services .service-item {
+    background-color: #fff;
+    padding: 30px;
+    margin: 15px;
+    flex-basis: 30%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#services .service-item:hover {
+    transform: translateY(-10px);
+}
+
+#services .service-item i {
+    font-size: 3em; /* Increased icon size */
+    margin-bottom: 15px;
+    color: #3498DB;
+}
+
+#services .service-item h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #5DADE2;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.social-media-icons a {
+    margin: 0 15px;
+    color: #fff;
+    font-size: 2.5em; /* Increased icon size */
+    transition: color 0.3s ease;
+}
+
+.social-media-icons a:hover {
+    color: #333;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2C3E50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
